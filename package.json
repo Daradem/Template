@@ -1,13 +1,13 @@
 {
-  "name": "popotillo-eshop",
-  "version": "0.0.0",
+  "name": "eshop-template",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:popotillo-eshop": "node dist/popotillo-eshop/server/server.mjs"
+    "serve:ssr:popotillo-eshop": "node dist/eshop-template/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +24,8 @@
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "zone.js": "~0.14.3",
+    "bootstrap": "^5.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.0.2",
