@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "popotillo-eshop": {
+    "eshop-template": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/popotillo-eshop",
+            "outputPath": "dist/eshop-template",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "popotillo-eshop:build:production"
+              "buildTarget": "eshop-template:build:production"
             },
             "development": {
-              "buildTarget": "popotillo-eshop:build:development"
+              "buildTarget": "eshop-template:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -96,7 +96,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           }
